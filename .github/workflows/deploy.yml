@@ -16,8 +16,8 @@ jobs:
           node-version: '14.0'
       - name: Install yarn and run unittest
         run: |
-          # yarn
-          # yarn test
+          yarn
+          yarn test
         env:
           CI: true
       - name: Publish to Github Packages Registry
