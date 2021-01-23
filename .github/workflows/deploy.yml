@@ -42,6 +42,6 @@ jobs:
           envs: GITHUB_USERNAME, GITHUB_TOKEN
           script: |
             # docker stop $(docker ps -a -q)
-            echo "$GITHUB_TOKEN" | docker login docker.pkg.github.com -u "$GITHUB_USERNAME" --password-stdin
+            echo "$GITHUB_TOKEN" | docker login docker.pkg.github.com -u $GITHUB_USERNAME --password-stdin
             # docker pull docker.pkg.github.com/mildrenben/cicd/test:latest
             # docker run -dit -p 80:80 docker.pkg.github.com/mildrenben/cicd/test:latest
